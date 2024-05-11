@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina1</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+
+<script> 
+    //function abrirPDF() {
+                // Reemplaza 'ruta/del/archivo.pdf' con la ubicación de tu archivo PDF
+                //var archivoPDF = 'C:/Users/gean/Downloads/ellibrorojo.pdf';
+                //dejo esta funcion por que me gusto xd
+                // Abre el archivo PDF en una nueva pestaña
+                //window.open(archivoPDF, '_blank');
+            //}
+
+
+
+            var pageLink = window.location.href;
+var pageTitle = String(document.title).replace(/\&/g, '%26');
+
+function fbs_click() { 
+    window.open(`http://www.facebook.com/sharer.php?u=${pageLink}&quote=${pageTitle}`, 'sharer', 'toolbar=0,status=0,width=626,height=436');
+    return false; 
+}
+
+function tbs_click() { 
+    window.open(`https://twitter.com/intent/tweet?text=${pageTitle}&url=${pageLink}`, 'sharer', 'toolbar=0,status=0,width=626,height=436');
+    return false; 
+}
+
+function lbs_click() { 
+    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${pageLink}`, 'sharer', 'toolbar=0,status=0,width=626,height=436');
+    return false; 
+}
+
+function rbs_click() { 
+    window.open(`https://www.reddit.com/submit?url=${pageLink}`, 'sharer', 'toolbar=0,status=0,width=626,height=436');
+    return false; 
+}
+
+function pbs_click() { 
+    window.open(`https://www.pinterest.com/pin/create/button/?&text=${pageTitle}&url=${pageLink}&description=${pageTitle}`, 'sharer', 'toolbar=0,status=0,width=626,height=436');
+    return false; 
+}
+    </script>
+</head>
+
+<body>
+    <img id="ball" src="images/ham2.png" alt="Balón">
+    <header id="main-header">
+        <a id="logo-header" href="#">
+            <span class="site-name">ARCHANGEL</span>
+            <span class="site-desc">Blog para el Parcial 1</span>
+        </a>
+<nav>
+    <ul>
+    <li><a href="asteroids.html">Asteroid</a></li>
+    <li><a href="#modalContact">Contact me</a></li>
+    <li class="hello-link"><a href="sus2.html">hello</a><div class="hello-tooltip">DONT TOUCH ME</div>
+    </li>
+   
+</ul>
+</nav>
+    </header> 
+    <section id="main-content">
+        <article>
+            <header>
+                <h1>Archangel: Pequeño blog informativo </h1>
+                <p>Primera entrada de blog personal: 13/03/2024</p>
+            </header>
+            <section class="section-fotos1">
+                    <img src="images/hamlog.png" alt="hamster bb"/>
+                    <img src="images/hamster1.jpg" alt="hamster bb"/>
+                    <img src="images/hamster2.jpg" alt="hamster bb"/>
+                    <img src="images/hamster3.jpg" alt="hamster bb"/>
+                    <img src="images/hamster5.jpg" alt="hamster bb"/>
+                    <img src="images/hamster6.jpg" alt="hamster bb"/>
+                    <img src="images/feli.jpg" alt="hamster bb"/>
+                    <img src="images/nice.jpg" alt="hamster bb"/>
+            </section>
+            <div id="like-container">
+                <script>
+                    
+                </script>
+                <button id="like-button" class="btn-like" data-count="0"><span>&#x2764;</span></button>
+                <span id="like-count" class="counter">0</span>
+            </div>
+            <div class="share-buttons-container">
+                <div class="share-list">
+                    <p style="font-family: 'Davida Regular'; text-align: center;">COMPARTIR</p>
+                    <!-- FACEBOOK -->
+                    <a class="fb-h" onclick="return fbs_click()" target="_blank">
+                        <img src="https://img.icons8.com/material-rounded/96/000000/facebook-f.png">
+                    </a>
+            
+                    <!-- TWITTER -->
+                    <a class="tw-h" onclick="return tbs_click()"  target="_blank">
+                        <img src="https://img.icons8.com/material-rounded/96/000000/twitter-squared.png">
+                    </a>
+            
+                    <!-- LINKEDIN -->
+                    <a class="li-h" onclick="return lbs_click()"  target="_blank">
+                        <img src="https://img.icons8.com/material-rounded/96/000000/linkedin.png">
+                    </a>
+            
+                    <!-- REDDIT -->
+                    <a class="re-h" onclick="return rbs_click()" target="_blank">
+                        <img src="https://img.icons8.com/ios-glyphs/90/000000/reddit.png">
+                    </a>
+            
+                    <!-- PINTEREST -->
+                    <a data-pin-do="buttonPin" data-pin-config="none" class="pi-h" onclick="return pbs_click()" target="_blank">
+                        <img src="https://img.icons8.com/ios-glyphs/90/000000/pinterest.png">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="content">
+                <h2>HAMSTERS</h2>
+
+                <ul class="ul-1">
+                    <li>Cricetino (cricetinae) se le conoce coloquialmente con el nombre de hámster, 
+                        pertenece a la familia de los roedores múridos y se tiene constancia de que existen 
+                        aproximadamente 18 especies distintas, proviene de Oriente Medio y del 
+                        sureste de Estados Unidos</li>
+                    <li>Existen diferentes tipos de Hamsters, algunos son:<ul class="ul-2">
+                    <li style="color: rgb(216, 22, 22);" > 
+                        "Mesocricetus auratus"
+                        <img id="imgDor"  src="images/doradito.jpg" alt="Mesocricetus auratus">
+                        <p>
+                            El hámster dorado o sirio (Mesocricetus auratus) es una especie de roedor de 
+                            la familia Cricetidae, que se encuentra en estado salvaje, se considera en peligro 
+                            de extinción, pero es popular como mascota y lamentablemente se usa en la investigación 
+                            científica, estos seres al ser adultos miden de 10 a 12 cm de longitud, y por lo general 
+                            tienen una vida media de dos a tres años</p>
+                            <p>El hámster sirio tiene bolsas ampliables llamadas abazones, 
+                                que se extienden desde sus mejillas a sus hombros 
+                                "padre de alforjas" (en árabe: أبو جراب), debido a la notable cantidad de espacio 
+                                de almacenamiento en las bolsas de sus mejillas.</p>
+                                <p>Algunas características son:</p>
+                            <ul class="ul-3">
+                                <li>Longitud: alrededor de los 10 cm.</li>
+                                <li>Peso: 120 g.</li>
+                                <li>Ojos: grandes y de color negro o rojo oscuro.</li>
+                                <li>Pelaje: de color castaño y blanco en el vientre y garganta, 
+                                    por lo que es brillante.</li>
+                                <li>Carácter: afectuoso e inteligente. 
+                                    Simpático y muy activo. 
+                                    A veces miedoso y agresivo.</li>
+                            </ul>
+                    </li>
+                    <li style="color: brown;">
+                        "Phodopus sungorus"
+                        <img src="images/dwarf.jpg" alt="enano">
+                        <p>Estos pequeños seres se pueden encontrar en dos colores, gris y blanco, suelen 
+                            tener el color gris con una raya dorsal negra a lo largo de la espalda y el 
+                            vientre blanco o bien pueden tener el blanco predominantes en todo el cuerpo</p>
+                            <p>Su comportamiento es activo, juguetón y me muestra más activo al atardecer 
+                                aunque también pueden estar activos en períodos cortos durante el día, 
+                                son animales que les gusta mucho escalar, investigar y trepar, y por lo tanto, 
+                                prefieren jaulas con doble piso</p>
+                                <p>Algunas características son:</p>
+                                <ul class="ul-3">
+                                    <li>Peso: entre 35 a 50 gr</li>
+                                    <li>Esperanza de vida: entre 1,5 - 2,5 años</li>
+                                    <li>Tamaño: entre 7 y 10 cm</li>
+                                    <li>Construye galerías bajo el subsuelo</li>
+                                    <li>Propenso a enfermedades como cancer</li>
+                                </ul>
+
+                    </li>
+                    <li style="color: greenyellow;">
+                    "Phodopus sungorus"
+                    <img src="images/Phodo.jpg" alt="enanin">
+                    <p>
+                        El hámster ruso (Phodopus sungorus) es una especie de roedor miomorfo de la familia 
+                        Cricetidae, originario de Kazajistán y el suroeste de Siberia, y no se reconocen 
+                        subespecies, mal visto como mascota, ya que sus cuidados se limitan prácticamente 
+                        a la alimentación e higiene de la vivienda; sin embargo, al igual que el resto de 
+                        las especies domésticas de hámster, también es importante brindarle un espacio 
+                        mínimo de 2800 cm3, para así evitar que padezcan de estrés.</p>
+                    <p> Algunas de sus características son:</p>
+                    <ul class="ul-3">
+                        <li> tamaño, de 7 a 10 cm de longitud</li>
+                        <li>35 a 50 g de peso</li>
+                        <li>Gordo bachicha (rechoncho)</li>
+                        <li>Solitario</li>
+                        <li>Propenso a morder si se siente amenazado</li></ul>
+                    </li>
+                    <li style="color: #18cc90;" >
+                        "Phodopus roborovskii"
+                        <img src="images/phodbrow.jpg" alt="">
+                        <p>Es una especie de roedor miomorfo de la familia Cricetidae propio de Asia,  
+                            no se reconocen subespecies, tiene una cola corta y por la planta velluda de 
+                            los miembros posteriores,su pelaje es fino y suave, de color gris en el dorso 
+                            y blanco en las partes inferiores, cola y alrededor de la boca, con variaciones 
+                            de color según la zona, sobre cada ojo presenta una pequeña mancha blanca. 
+                            Tiene grandes abazones que le permiten transportar los alimentos</p>
+                            <p>Algunas de sus características son:</p>
+                            <ul class="ul-3">
+                                <li>Mide hasta 9 cm</li>
+                                <li>El pelaje más fino</li>
+                                <li>Habitos nocturnos</li>
+                                <li>NO HIBERNA</li>
+                                <li>Su alimento principal son semillas</li>
+                            </ul>
+                    </li>
+                    <li style="color: #ce640d;">
+                        "Cricetulus barabensis griseus"
+                        <img src="images/chino.jpg" alt="">
+                        <p>
+                            El hasmter chino,  roedor del género Cricetulus de la subfamilia Cricetidae 
+                            que se originó en los desiertos del norte de China y Mongolia, su cola 
+                            inusualmente es larga en comparación con otros hámsters, la mayoría de 
+                            los cuales tienen colas cortas, estos seres son principalmente nocturnos, 
+                            aunque permanecerán despiertos por períodos breves, entre siestas, 
+                            durante el día.</p>
+                            <p>
+                                Algunas características son:
+                            </p>
+                            <ul class="ul-3">
+                                <li>Su cuerpo es largo y degalgo</li>
+                                <li>Su color nativo es marrón</li>
+                                <li>Mide entre 8 y 13 cm de longitud</li>
+                                <li>Vive de 2 a 4 años con buenos cuidados</li>
+                                <li>Animal de compañia</li>
+                            </ul>
+
+
+                    </li>
+                </ul>
+            </li>
+                    <li style="font-family: 'Davida Regular'; font-size: 30px; text-align: center;">Algunos videos para su observación
+                        <ul><il>
+                            <iframe width="315" height="560" 
+                            src="https://www.youtube.com/embed/vlUlgWm5Ag8" 
+                            title="How do Hamsters do this? 🤯" 
+                            frameborder="0" allow="accelerometer; autoplay; 
+                            clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                            web-share" allowfullscreen></iframe>
+                        
+                            <iframe width="315" height="560" src="https://www.youtube.com/embed/hdNp15x0ymY" 
+                            title="&quot;I am not fat I am a fluffy hamster&quot;🐹Cute fluffy hamster🐹 
+                            #hamster #hamstershorts #shorts" frameborder="0" allow="accelerometer; 
+                            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                            web-share" allowfullscreen></iframe>
+                        <p>    --   </p>
+                    </il></ul>
+                        </li>
+                    <li style="font-family: 'Davida Regular'; text-align: center; font-size: 30px;">MAPA AL TECNOLOGICO (HOGAR DE ESTA PAGINA)
+                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1UEcFq37OWTXcidbdnCx4p1QLl9wMBS4&ehbc=2E312F" 
+                        width="640" height="480"></iframe></li>
+                    <li style="font-family: 'Davida Regular', sans-serif; font-size: 30px;">SOMOS UN PROYECTO NUEVO, DONANOS ALGO :) </li>
+                </ul></ul>
+                <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+                <!-- Set up a container element for the button -->
+                <div id="paypal-button-container"></div>
+
+                <p style="color: #800080;">Cualquier pregunta, no dudes en enviar un correo a las direcciones compartidas en el boton contact me</p>
+                <p></p>
+            </div>
+
+        </article>
+    </section> 
+    <footer id="main-footer">
+        <p>&copy; 2024 <a href="https://martineztorre.tecnm.mx/">ITSMT</a></p>
+        <p style="font-family: 'butterfly';">Lizard Wizard</p>
+    </footer>
+
+<div id="modalContact" class="modalmask">
+    <div class="modalbox movedown">
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Contact me</h2>
+
+        <div class="modal-images">
+            <div class="image-container">
+                <img src="images/sox.jpg" alt="">
+                <p style="color: #800080;">Gean Ramhon Clement Acosta Soto</p>
+                <p>200i0034@tecmartinez.edu.mx</p>
+            </div>
+            <div class="image-container">
+                <img src="images/jazz.jpg" alt="">
+                <p style="color: red;">Xóchitl Jazmín López Marín</p>
+                <p>200i0141@tecmartinez.edu.mx</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var likeButton = document.getElementById("like-button");
+        var likeCount = document.getElementById("like-count");
+        var storedLikes = localStorage.getItem("likes");
+        if (storedLikes) {
+            likeCount.textContent = storedLikes;
+            likeButton.setAttribute("data-count", storedLikes);
+        }
+
+        likeButton.addEventListener("click", function(event) {
+            event.preventDefault(); 
+            var currentLikes = parseInt(likeButton.getAttribute("data-count"));
+            var newLikes = currentLikes + 1;
+            likeCount.textContent = newLikes;
+            likeButton.setAttribute("data-count", newLikes);
+            localStorage.setItem("likes", newLikes);
+        });
+
+        // Obtiene el balón
+        var ball = document.getElementById('ball');
+
+        // Inicia el movimiento cuando se hace clic en el balón
+        ball.onmousedown = function (event) {
+            // Calcula el desplazamiento del balón
+            let shiftX = event.clientX - ball.getBoundingClientRect().left;
+            let shiftY = event.clientY - ball.getBoundingClientRect().top;
+
+            // Establece la posición absoluta del balón
+            ball.style.position = 'absolute';
+
+            // Mueve el balón a la posición inicial
+            moveAt(event.pageX, event.pageY);
+
+            // Mueve el balón a la nueva posición
+            function moveAt(pageX, pageY) {
+                ball.style.left = pageX - shiftX + 'px';
+                ball.style.top = pageY - shiftY + 'px';
+            }
+
+            // Actualiza la posición del balón mientras se mueve el ratón
+            function onMouseMove(event) {
+                moveAt(event.pageX, event.pageY);
+            }
+
+            // Agrega un evento de escucha para el movimiento del ratón
+            document.addEventListener('mousemove', onMouseMove);
+
+            // Detiene el movimiento del balón cuando se suelta el clic
+            ball.onmouseup = function () {
+                document.removeEventListener('mousemove', onMouseMove);
+                ball.onmouseup = null;
+            };
+        };
+
+        // Evita que el navegador inicie el arrastre de la imagen
+        ball.ondragstart = function () {
+            return false;
+        };
+    });
+    document.getElementById("imgDor").addEventListener("click", function() {
+    alert("YAY");
+});
+paypal.Buttons({
+        createOrder() {
+          return fetch("/my-server/create-paypal-order", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              cart: [
+                {
+                  sku: "YOUR_PRODUCT_STOCK_KEEPING_UNIT",
+                  quantity: "YOUR_PRODUCT_QUANTITY",
+                },
+              ]
+            })
+          })
+          .then((response) => response.json())
+          .then((order) => order.id);
+        }
+      }).render('#paypal-button-container');
+    </script>
+    
+</body>
+
+</html>
